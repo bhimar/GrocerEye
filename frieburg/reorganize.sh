@@ -16,15 +16,15 @@ cp train/*.txt labels
 cp train/*.jpg images
 
 mkdir data
-mkdir data/frieburg
-cp train/*.jpg data/frieburg
-find ./data/frieburg/*.jpg > train.txt
+mkdir data/custom
+cp train/*.jpg data/custom
+find ./data/custom/*.jpg > train.txt
 rm -rf data
 
 mkdir data
-mkdir data/frieburg
-cp test/*.jpg data/frieburg
-find ./data/frieburg/*.jpg > test.txt
+mkdir data/custom
+cp test/*.jpg data/custom
+find ./data/custom/*.jpg > test.txt
 rm -rf data
 
-cp train.txt valid.txt
+touch valid.txt
