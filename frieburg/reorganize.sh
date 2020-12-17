@@ -17,14 +17,16 @@ cp train/*.jpg images
 
 mkdir data
 mkdir data/custom
-cp train/*.jpg data/custom
-find ./data/custom/*.jpg > train.txt
+mkdir data/custom/images
+cp train/*.jpg data/custom/images
+find ./data/custom/images*.jpg > train.txt
 rm -rf data
 
 mkdir data
 mkdir data/custom
-cp test/*.jpg data/custom
-find ./data/custom/*.jpg > test.txt
+mkdir data/custom/images
+cp test/*.jpg data/custom/images
+find ./data/custom/images*.jpg > test.txt
 rm -rf data
 
 touch valid.txt
