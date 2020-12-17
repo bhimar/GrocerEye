@@ -12,22 +12,20 @@ cp train/_darknet.labels classes.names
 cp train/*.txt labels
 cp train/*.jpg images
 
-cp train/*.txt labels
-cp train/*.jpg images
+cp test/*.txt labels
+cp test/*.jpg images
 
 mkdir data
-mkdir data/custom
-mkdir data/custom/images
-cp train/*.jpg data/custom/images
-find ./data/custom/images/*.jpg > train.txt
+mkdir data/images
+cp train/*.jpg data/images
+find ./data/images/*.jpg > train.txt
 rm -rf data
 
 mkdir data
-mkdir data/custom
-mkdir data/custom/images
-cp test/*.jpg data/custom/images
-find ./data/custom/images/*.jpg > valid.txt
+mkdir data/images
+cp test/*.jpg data/images
+find ./data/images/*.jpg > valid.txt
 rm -rf data
 
-rm -rf train
-rm -rf test
+# rm -rf train
+# rm -rf test
