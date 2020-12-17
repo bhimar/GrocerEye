@@ -19,14 +19,14 @@ mkdir data
 mkdir data/custom
 mkdir data/custom/images
 cp train/*.jpg data/custom/images
-find ./data/custom/images*.jpg > train.txt
+find ./data/custom/images/*.jpg > train.txt
 rm -rf data
 
 mkdir data
 mkdir data/custom
 mkdir data/custom/images
 cp test/*.jpg data/custom/images
-find ./data/custom/images*.jpg > test.txt
+find ./data/custom/images/*.jpg > test.txt
 rm -rf data
 
 touch valid.txt
