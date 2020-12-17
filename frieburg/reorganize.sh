@@ -5,7 +5,7 @@ mkdir images
 mkdir labels
 
 touch train.txt
-touch test.txt
+touch valid.txt
 
 cp train/_darknet.labels classes.names
 
@@ -26,7 +26,8 @@ mkdir data
 mkdir data/custom
 mkdir data/custom/images
 cp test/*.jpg data/custom/images
-find ./data/custom/images/*.jpg > test.txt
+find ./data/custom/images/*.jpg > valid.txt
 rm -rf data
 
-cp train.txt valid.txt
+rm -rf train
+rm -rf test
