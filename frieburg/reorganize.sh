@@ -29,4 +29,4 @@ cp test/*.jpg data/custom/images
 find ./data/custom/images/*.jpg > test.txt
 rm -rf data
 
-touch valid.txt
+cp train.txt valid.txt
